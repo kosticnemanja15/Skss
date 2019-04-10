@@ -1,0 +1,495 @@
+/* reset.css */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+
+
+/*STYLE CSS*/
+
+
+/*HOME*/
+
+body{
+ overflow-x: hidden;  
+}
+header{
+ 
+  position: relative;
+}
+.top-menu{
+  position: fixed;
+  z-index: 3;
+  width: 100%;
+  height: 50px;
+  transition: .5s linear;  
+}
+.top-menu a:hover{
+  text-decoration: none;
+}
+.top-menu.active{
+  background: #25303d; 
+  box-shadow: 0 4px 6px -6px #222;
+}
+/*.top-menu.active nav li a{
+   color: #000;  
+}*/
+
+.top-menu-flex-left.home-flex img{
+  display: none;
+}
+
+.top-menu.active .top-menu-flex-left.home-flex img{
+  display: block;
+}
+
+header .nav-holder ul {
+
+    text-align: center;
+    margin: 0;
+}
+header .top-menu.active .nav-holder ul {
+    text-align: right;
+}
+
+
+header .nav-holder nav li {
+    display: inline-block;
+    list-style: none; 
+  position: relative;
+  padding: 22px 0 12px;
+}
+header .nav-holder nav li:last-child {
+  background: #e43c24;
+
+}
+
+
+
+header .nav-holder nav li a {
+   font-family: 'Nunito Sans',sans-serif;
+   text-transform: uppercase;
+   font-size: 14px;
+  color: #fff;
+  padding:0 10px;
+  letter-spacing: 0.4px;
+}
+
+
+ header #menu-button {
+    display: none;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    width: 30px;
+    z-index: 1;
+    color: white;
+   cursor: pointer;
+   height: 820px;
+}
+.gradient{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 820px;
+  z-index: 1;
+/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.3+2,0.29+100 */
+background: -moz-linear-gradient(top, rgba(0,0,0,0.3) 0%, rgba(0,0,0,0.3) 2%, rgba(0,0,0,0.29) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.3) 2%,rgba(0,0,0,0.29) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(0,0,0,0.3) 0%,rgba(0,0,0,0.3) 2%,rgba(0,0,0,0.29) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d000000', endColorstr='#4a000000',GradientType=0 ); /* IE6-9 */
+}
+.swipe{
+  height: 820px;
+}
+.swipe img{
+  width: 100%;
+  height: 820px;
+  object-fit: cover;
+
+}
+.home-info-box{
+  position: absolute;
+  z-index: 2;
+  top: 170px;
+  width: 100%;
+  text-align: center;
+
+}
+.home-logo img{
+  width: 113px;
+}
+h1 {
+  color: #fff;
+  font-size: 32px;
+  font-weight: bold;
+  padding: 20px 0;
+  font-family: 'Montserrat',sans-serif;
+  line-height: 1.09;
+  text-transform: uppercase;
+
+}
+h2{
+  font-size: 32px;
+  font-weight: bold;
+  color: #000;
+    font-family: 'Montserrat',sans-serif;
+  line-height: 1.09;
+  text-transform: uppercase;
+  text-align: center;
+}
+h3{
+    font-size: 18px;
+    font-weight: bold;
+  color: #000;
+    font-family: 'Montserrat',sans-serif;
+  line-height: 1.09;
+  text-transform: uppercase;
+ 
+}
+h4{
+  color: #fff;
+  font-weight: bold;
+  font-size: 15px;
+    font-family: 'Montserrat',sans-serif;
+  line-height: 1.09;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: 'Nunito Sans',sans-serif;
+  color: #fff;
+  font-size: 16px;
+  line-height: 1.31;
+  padding:18px 0;
+}
+a:hover{
+  text-decoration: none;
+}
+img{
+  width: 100%;
+  height: auto;
+}
+.home-options {
+  padding:10px 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.home-options-box{
+  padding: 20px 30px 10px;
+  border-radius: 12%;
+}
+.home-options-box:hover{
+  background: gray;
+}
+.home-options-box p {
+  padding-top: 15px;
+}
+.home-options-box-img img{
+  width: 67px;
+}
+
+.btn{
+  background: #e43c24;
+  font-family: 'Montserrat',sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 12px;
+  padding: 7px 35px;
+
+}
+.btn:hover {
+  color: #fff;
+
+}
+main{
+  padding: 80px 0;
+  background: #fff;
+}
+.btn.btn-dark{
+  background: #000;
+
+}
+.aktuelnosti-box p{
+  color: #373737;
+}
+.aktuelnosti-box{
+   padding:60px 0;
+}
+.aktuelnosti-box-img{
+  position: relative;
+}
+.marker{
+  position: absolute;
+  top: 185px;
+  background: #db4a0a;
+      padding: 6px 14px;
+      min-width: 108px;
+      text-align: center;
+      color: #fff;
+      font-family: 'Nunito Sans',sans-serif;
+      text-transform: uppercase;
+      font-size: 12px;
+}
+.marker:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.marker.marker-rezultati{
+  background: #07c177;
+}
+.marker.marker-izvestaj{
+  background: #2475d2;
+}
+.aktuelnosti-box-img img{
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+.aktuelnosti-box-text {
+  height: 300px;
+}
+.discipline{
+  position: relative;
+  height: 762px;
+}
+.discipline-img{
+  position: absolute;
+  width: 100%;
+  height: 762px;
+  object-fit: cover;
+}
+.discipline-info-text{
+  padding-right: 30px;
+}
+.discipline-info-text h2{
+  color: #fff;
+  text-align: left;
+}
+.discipline p{
+  padding: 45px 0 61px;
+}
+
+.btn.btn-empty{
+  background: none;
+  border: 1px solid white;
+}
+.nopadding{
+  margin:0;
+  padding: 0;
+}
+
+.discipline-info{
+  padding: 200px 0;
+}
+.discipline-boxes{
+  display: flex;
+  flex-wrap: wrap;
+}
+.discipline-box{
+  padding: 5px;
+  width: 25%;
+}
+
+.discipline-box img{
+  width: 148px;
+}
+
+.partneri {
+  text-align: center;
+  padding: 100px 0;
+  background: #f3f3f3;
+}
+.partneri p{
+  padding: 40px 0;
+  color: #373737;
+}
+.partneri-images{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.partneri-images-box{
+  border: 1px solid #fff;
+  width: 203px;
+  height: 117px;
+  margin-left: 5px;
+}
+.partneri-images-box img {
+  width: 120px;
+}
+
+footer{
+  background: #25303d;
+}
+.footer-info{
+  display: flex;
+  flex-direction: row;
+  padding:50px 0;
+}
+.footer-info-logo{
+  flex: 1;
+  
+}
+.footer-info-logo img{
+  width: 474px;
+}
+
+.footer-info-adresa{
+  flex: 1;
+  text-align: right;
+
+}
+/*ARCHIVE*/
+
+.top-menu-flex{
+  display: flex;
+  flex-direction: row;
+}
+.top-menu-flex-left img{
+  width: 30px;
+  padding-top: 10px;
+}
+.top-menu-flex-right{
+  flex:1;
+}
+header .top-menu.menu-small .nav-holder ul {
+
+    text-align: right;
+    margin: 0;
+}
+
+
+.gradient.gradient-small{
+  height: 300px;  
+}
+
+.back-img img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.header-info-small{
+  position: absolute;
+  bottom: 10px;
+  z-index: 1;
+}
+
+.aktuelnosti-box.aktuelnosti-box-flex{
+  display: flex;
+  flex-direction: row;
+  padding: 0 0 25px;
+}
+
+.aktuelnosti-box.aktuelnosti-box-flex .aktuelnosti-box-img img {
+    width: 370px;
+    height: 220px;
+    object-fit: cover;
+}
+.aktuelnosti-box.aktuelnosti-box-flex .aktuelnosti-box-text {
+  flex: 1;
+  height: unset;
+  padding: 0 18px;
+}
+.aktuelnosti-box.aktuelnosti-box-flex .aktuelnosti-box-text h3{
+  padding: 20px 0;
+}
+
+.aktuelnosti-box.aktuelnosti-box-flex .aktuelnosti-box-text p{
+  padding: 0;
+}
+
+.aktuelnosti-box.aktuelnosti-box-flex .aktuelnosti-box-text .btn{
+  margin-top: 25px;
+}
+
+
+/*INSIDE*/
+
+.inside-text p{
+  color: #373737;
+  text-align: justify;
+}
+.inside-banner{
+  background: #efefef;
+  margin-top: 20px;
+}
+.inside-banner h4{
+      background: gray;
+    padding: 10px;
+    font-weight: 400;
+}
+.inside-banner-box{
+  padding: 0 15px;
+}
+.inside-banner-box p{
+  font-size: 14px;
+  padding: 18px 0 5px;
+}
+.inside-banner-box h3{
+  font-size: 14px;
+  padding: 5px 0 20px;
+}
+.inside-banner-box .marker {
+  position: unset;
+  margin-top: 15px;
+  margin-right: 10px;
+  float: left;
+  font-size: 12px;
+}
+
+.img-banner img{
+  width: 100%;
+  object-fit: cover;
+  padding: 20px 0;
+}
+
